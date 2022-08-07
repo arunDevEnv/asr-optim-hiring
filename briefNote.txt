@@ -1,0 +1,11 @@
+Problem: The instance to solve is a problem to maximise the profit of the firm by using and selling machines.
+The problem can be analysed as a network with source as the beginning of time period and sink as the last time period or the time period where restructuring ends.
+From source, while moving forward in time, we encounter decisions of buy/sell or if not, using the existing machine for profit.
+Maximise profit is the objective of the model and at each time period, there could be either one of the above mentioned decisions
+
+Approach: Since the number of instances are less in number, a direct approach of enumerating all the possibilities and evaluating them can be done.
+This approach ensures that all the relevant combinations are evaluated and thus the result obtained will be optimum.
+For large sized problems, this approach may not be ideal as the number of calculations will increase since we are doing a one to one comparison for all the combinations.
+Alternative method to suggest could be backward recursion approach in dynamic programming which could potentially execute faster.
+
+Method to run the model: Copy instance.txt into the same folder as the model.pyz file and execute it by calling "python model.pyz"
